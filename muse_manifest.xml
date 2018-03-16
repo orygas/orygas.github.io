@@ -1,10 +1,10 @@
-<manifest alg="2" build="2018.0.0.379" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="orygas.github.io" resolutions="1x" timestamp="1521221749753">
+<manifest alg="2" build="2018.0.0.379" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="orygas.github.io" resolutions="1x" timestamp="1521235325915">
   <folder name="css">
     <file name="site_global.css" crc="444006867"/>
-    <file name="index.css" crc="3860699959" ref="index"/>
-    <file name="nomq_index.css" crc="3981554709" ref="index"/>
-    <file name="index_eng.css" crc="3915787889" ref="index_eng"/>
-    <file name="nomq_index_eng.css" crc="359699973" ref="index_eng"/>
+    <file name="index.css" crc="72095080" ref="index"/>
+    <file name="nomq_index.css" crc="3982696430" ref="index"/>
+    <file name="index_eng.css" crc="4188956035" ref="index_eng"/>
+    <file name="nomq_index_eng.css" crc="131097271" ref="index_eng"/>
   </folder>
   <folder name="scripts">
     <file name="jquery-1.8.3.min.js" crc="209076791" ref="index:index_eng"/>
@@ -17,20 +17,25 @@
   </folder>
   <folder name="images">
     <file name="blank.gif" crc="4208392903" ref="index:index_eng"/>
-    <file name="avatar_web400x400.png" crc="375928175" seo="true" ref="index">
-      <caption webpage="index" alt=""/>
-      <caption webpage="home_eng" alt=""/>
-    </file>
     <file name="avatar_web-crop-u699.png" crc="4231565524" seo="true" ref="index">
       <caption webpage="index" alt=""/>
     </file>
-    <file name="avatar_web183x183.png" crc="4244667951" seo="true" ref="index">
+    <file name="avatar_web-crop-u6992.png" crc="3890383193" seo="true" ref="index">
       <caption webpage="index" alt=""/>
     </file>
-    <file name="avatar_web-crop-u1490.png" crc="4231565524" seo="true" ref="index_eng">
+    <file name="avatar_web-crop-u6993.png" crc="3811720020" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="avatar_web-crop-u1806.png" crc="4231565524" seo="true" ref="index_eng">
+      <caption webpage="index_eng" alt=""/>
+    </file>
+    <file name="avatar_web-crop-u18062.png" crc="3890383193" seo="true" ref="index_eng">
+      <caption webpage="index_eng" alt=""/>
+    </file>
+    <file name="avatar_web-crop-u18063.png" crc="3811720020" seo="true" ref="index_eng">
       <caption webpage="index_eng" alt=""/>
     </file>
   </folder>
-  <file name="index.html" crc="3901758407" seo="true" mt="1521221727052" redirect="true"/>
-  <file name="index_eng.html" crc="4018713197" seo="true" mt="1521221719619" redirect="true"/>
+  <file name="index.html" crc="509563552" seo="true" mt="1521235320913" redirect="true"/>
+  <file name="index_eng.html" crc="352467972" seo="true" mt="1521235274768" redirect="true"/>
 </manifest>
