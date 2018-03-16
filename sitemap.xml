@@ -11,6 +11,9 @@
     <image:image>
       <image:loc>http://orygas.github.io/images/avatar_web-crop-u699.png</image:loc>
     </image:image>
+    <image:image>
+      <image:loc>http://orygas.github.io/images/avatar_web183x183.png</image:loc>
+    </image:image>
   </url>
   <url>
     <loc>http://orygas.github.io/index_eng.html</loc>
@@ -18,7 +21,7 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <image:image>
-      <image:loc>http://orygas.github.io/images/avatar_web-crop-u1169.png</image:loc>
+      <image:loc>http://orygas.github.io/images/avatar_web-crop-u1490.png</image:loc>
     </image:image>
   </url>
 </urlset>
