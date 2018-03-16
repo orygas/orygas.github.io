@@ -1,4 +1,4 @@
-<manifest alg="2" build="2018.0.0.379" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="orygas.github.io" resolutions="1x" timestamp="1521220754665">
+<manifest alg="2" build="2018.0.0.379" opt="false" iceEnabled="true" iceMarkupVersion="2" iceEnabledOptions="link,responsive,cachebuster,textStyling" exportTarget="other" domain="orygas.github.io" resolutions="1x" timestamp="1521220634039">
   <folder name="css">
     <file name="site_global.css" crc="444006867"/>
     <file name="index.css" crc="3765863301" ref="index"/>
@@ -29,6 +29,6 @@
       <caption webpage="home_eng" alt=""/>
     </file>
   </folder>
-  <file name="index.html" crc="314423577" seo="true" mt="1521220747890" redirect="true"/>
+  <file name="index.html" crc="314423577" seo="true" mt="1521220631557" redirect="true"/>
   <file name="index_eng.html" crc="281554141" seo="true" mt="1521220631559" redirect="true"/>
 </manifest>
