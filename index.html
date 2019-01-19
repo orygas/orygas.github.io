@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- css -->
+  <link rel="stylesheet" type="text/css" href="css/stronka.css">
+  <!-- js -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- tytuł -->
+  <title>Home</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <!-- okładka -->
+    <div id="cover">
+      <div id="margines-top">
+      </div>
+        <div id="fade-in">
+          <h1>Frédéric Chopin</h1>
+          <h2>Polish composer and virtuoso pianist of the Romantic era who wrote primarily for solo piano. He has maintained worldwide renown as a leading musician of his era, one whose "poetic genius was based on a professional technique that was without equal in his generation."</h2>
+        </div>
+        <div id="strzalka">
+          <a href="#next"><img src="img/strzalka.png"></a>
+        </div> <!-- zamknięcie strzałki -->
+    </div> <!-- zamknięcie okładki -->
+
+    <!-- treść -->
+
+    <div id="next">
+      <img class ="zdjecie0" src="img/chopin.jpg">
+    </div> <!-- zmaknięcie treści -->
+
+    <!-- gładkie scrolowanie -->
+    <script>
+    $('a[href*="#"]:not([href="#"])').click(function() {
+      if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+          $('html, body').animate({
+            scrollTop: target.offset().top
+          }, 800);
+          return false;
+        }
+      }
+    });
+    </script>
+</body>
+</html>
