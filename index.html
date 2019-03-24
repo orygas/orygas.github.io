@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- css -->
+  <link rel="stylesheet" type="text/css" href="css/stronka.css">
+  <!-- js -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- tytuł -->
+  <title>Home</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <center>
+    <div class="tytul">trochę tu pusto</div>
+    <h2>coś tu kiedyś będzie</h2>
+    <h2>¯\_(ツ)_/¯</h2>
+  </center>
+  <nav class="fixed-nav-bar">
+    <div id="menu" class="menu">
+      <!-- Rzeczy na pasku nawigacji -->
+      <ul class="menu-items">
+        <li><a href="">A</a></li>
+        <li><a href="">B</a></li>
+        <li><a href="">C</a></li>
+        <li><a href="">D</a></li>
+    </ul>
+    </div>
+    <div class="zdjecie0">
+      <a href="index.html"><img src ="img/kappa.png"/></a>
+    </div>
+  </nav>
+  <!-- scrolowanie do diva z '#' -->
+  <script>
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 800);
+        return false;
+      }
+    }
+  });
+  </script>
+</body>
+</html>
