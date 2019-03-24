@@ -199,7 +199,6 @@ transition: .4s ease-in-out;
 }
 
  #strzalka {
-  width: 100%;
   margin: 0 auto;
   text-align: center;
   margin-top: 290px;
@@ -208,9 +207,12 @@ transition: .4s ease-in-out;
   -moz-animation: fadeIn ease 2s;
   -o-animation: fadeIn ease 2s;
   -ms-animation: fadeIn ease 2s;
-  bottom: -50px;
+  content: url('../img/strzalka.png');
+  width: auto;
  }
-
+#strzalka.motyw {
+  content: url('../img/strzalka_ciemna.png');
+}
 #strzalka img:hover {
   filter: invert(40%);
 }
