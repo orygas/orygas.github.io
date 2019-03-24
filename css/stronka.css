@@ -184,17 +184,14 @@ a:-webkit-any-link {
 }
 /* nie używane (kiedyś będzie) */
 #cover{
-  background-color: var(--bg1);
+  /* background: url('../img/wall.jpg') fixed center no-repeat; */
   background-size: cover;
-  max-width: 100%;
+  width: 100%;
   height: 100%;
-  margin: 0 auto;
-  padding: none;
   transition: ease-in-out .3s;
+  padding-bottom: 230px;
 }
 #next {
-  background: var(--bg1);
-  padding: 280px 120px 240px 70px;
   height: 100%;
 }
 #strzalka img:hover, #strzalka img, a, a:link, a:visited, a:active, a:link {
@@ -211,6 +208,7 @@ transition: .4s ease-in-out;
   -moz-animation: fadeIn ease 2s;
   -o-animation: fadeIn ease 2s;
   -ms-animation: fadeIn ease 2s;
+  bottom: -50px;
  }
 
 #strzalka img:hover {
@@ -302,5 +300,79 @@ user-drag: none;
   }
   h2 {
     font-size: 16px;
+  }
+}
+@media only screen and (min-height: 480px) {
+  #cover {
+    padding-bottom: 0px;
+  }
+  #strzalka {
+    margin-top: 50px;
+  }
+}
+  @media only screen and (min-height: 500px) {
+    #cover {
+      padding-bottom: 0px;
+    }
+    #strzalka {
+      margin-top: 70px;
+    }
+}
+@media only screen and (min-height: 576px) {
+  #cover {
+    padding-bottom: 0px;
+  }
+  #strzalka {
+    margin-top: 146px;
+  }
+}
+@media only screen and (min-height: 600px) {
+  #cover {
+    padding-bottom: 0px;
+  }
+  #strzalka {
+    margin-top: 170px;
+  }
+}
+@media only screen and (min-height: 700px) {
+  #cover {
+    padding-bottom: 0px;
+  }
+  #strzalka {
+    margin-top: 270px;
+  }
+}
+@media only screen and (min-height: 800px) {
+  #cover {
+    padding-bottom: 0px;
+  }
+  #strzalka {
+    margin-top: 370px;
+  }
+}
+@media only screen and (min-height: 900px) {
+  #cover {
+    padding-bottom: 185px;
+  }
+  #strzalka {
+    margin-top: 285px;
+  }
+}
+@media only screen and (min-height: 1000px) {
+  #cover {
+    padding-bottom: 280px;
+  }
+  #strzalka {
+    margin-top: 290px;
+  }
+}
+@media only screen and (min-height: 1100px) {
+  #cover {
+    padding-bottom: 380px;
+  }
+}
+@media only screen and (min-height: 2160px) {
+  #cover {
+    padding-bottom: 1440px;
   }
 }
