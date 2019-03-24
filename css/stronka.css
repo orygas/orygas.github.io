@@ -4,6 +4,7 @@
   --bg3: #1d1e2a;
   --bgtwitch: #6441A4;
   --bgnavigation: #4e337f;
+  --bgdark: #37245b;
   --text1: #ddd;
   --text2: #eee;
   --text3: #aaa;
@@ -19,6 +20,11 @@ html {
 }
 body {
   background-color: var(--bgtwitch);
+  color: var(--texttwitch);
+  transition: 0.5s;
+}
+body.motyw {
+  background-color: var(--bg1);
   color: var(--texttwitch);
 }
 html, body {
@@ -43,11 +49,49 @@ li {
     display: list-item;
     text-align: -webkit-match-parent;
 }
-li.kappa {
-    list-style-image: url('../img/kappa50x50.png');
-    height: 50px;
-    width: 50px;
-
+ul.motyw {
+  overflow: hidden;
+  border-radius: 1px solid #14151F;
+  background: var(--bgnavigation);
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  line-height: 50px;
+  cursor: pointer;
+  width: 80px;
+  right: 0;
+  z-index: 1;
+}
+li.motyw {
+  position: fixed;
+  bottom: -50px;
+  right: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+  color: var(--texttwitch);
+}
+ul.motyw li.motyw {
+    list-style: none;
+    width: 80px;
+    height: 100px;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    animation: fadeIn ease 2s;
+}
+ul.motyw.active li.motyw {
+  transform: translateY(-50px);
+}
+ul.motyw li.motyw span.motyw {
+  display: block;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+}
+ul.motyw li.motyw span.motyw:nth-child(1) {
+  background: var(--bgnavigation);
+  color: var(--texttwitch);
 }
 a:-webkit-any-link {
     color: -webkit-link;
@@ -96,7 +140,7 @@ a:-webkit-any-link {
   line-height: 50px;
 }
 .menu {
-  width: 90%;
+  width: 80%;
   max-width: 960px;
   height: 100%;
   margin-left: 50px;
@@ -107,7 +151,7 @@ a:-webkit-any-link {
   font-size: 100%;
   font-weight: bold;
   color: var(--texttwitch);
-  pointer-events: none; <!-- Wyłączenie klikania na navbar -->
+  pointer-events: none; /* wyłączenie klikania */
 }
 .menu-items li {
   display: inline-block;
@@ -124,8 +168,8 @@ a:-webkit-any-link {
   margin-right: 20px;
   margin-left: 10px;
 }
+/* nie używane (kiedyś będzie) */
 #cover{
-  background: url("../img/tlo-chopin.jpg") fixed center no-repeat;
   background-color: var(--bg1);
   background-size: cover;
   max-width: 100%;
@@ -133,9 +177,6 @@ a:-webkit-any-link {
   margin: 0 auto;
   padding: none;
   transition: ease-in-out .3s;
-}
-#margines-top {
-  padding: 30px;
 }
 #next {
   background: var(--bg1);
@@ -161,8 +202,9 @@ transition: .4s ease-in-out;
 #strzalka img:hover {
   filter: invert(40%);
 }
+/* nie używane (kiedyś będzie) KONIEC*/
 /* wylaczanie zaznaczania */
-#fade-in {
+.wybor {
 -webkit-touch-callout: none;
 -webkit-user-select: none;
 -moz-user-select: none;
