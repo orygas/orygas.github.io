@@ -1,3 +1,4 @@
+/* css */
 :root{
   --bg1: #14151F;
   --bg2: #1a1b26;
@@ -41,6 +42,9 @@ h2 {
   font-size: 32px;
   color: var(--texttwitch);
 }
+h2.motyw {
+  color: var(--bgnavigation);
+}
 img {
     max-width: 100%;
     max-height: 100%;
@@ -52,7 +56,6 @@ li {
 ul.motyw {
   overflow: hidden;
   border-radius: 1px solid #14151F;
-  background: var(--bgnavigation);
   position: absolute;
   bottom: 0;
   height: 50px;
@@ -93,6 +96,12 @@ ul.motyw li.motyw span.motyw:nth-child(1) {
   background: var(--bgnavigation);
   color: var(--texttwitch);
 }
+.motyw-img {
+  height: 20px;
+  width: 20px;
+  padding-left: 15px;
+  padding-top: 15px;
+}
 a:-webkit-any-link {
     color: -webkit-link;
     cursor: pointer;
@@ -107,8 +116,12 @@ a:-webkit-any-link {
   color: var(--texttwitch);
   text-transform: uppercase;
 }
+.tytul.motyw {
+  color: var(--bgnavigation);
+}
 #tytul {
   margin-top: 100px;
+  height: 80px;
 }
 .zdjecie0 {
   border-radius: 50%;
@@ -135,6 +148,9 @@ a:-webkit-any-link {
   height: 50px;
   background-color: var(--bgnavigation);
 }
+.fixed-nav-bar.motyw {
+  background-color: var(--bgdark);
+}
 .fixed-nav-bar li, .fixed-nav-bar a {
   height: 50px;
   line-height: 50px;
@@ -151,7 +167,10 @@ a:-webkit-any-link {
   font-size: 100%;
   font-weight: bold;
   color: var(--texttwitch);
-  pointer-events: none; /* wyłączenie klikania */
+  pointer-events: all; /* wyłączenie klikania */
+}
+.menu-items.motyw {
+  color: var(--bgnavigation);
 }
 .menu-items li {
   display: inline-block;
@@ -162,11 +181,6 @@ a:-webkit-any-link {
   text-decoration: none;
   color: var(--texttwitch);
   cursor: not-allowed;
-}
-.sitename {
-  display: inline-block;
-  margin-right: 20px;
-  margin-left: 10px;
 }
 /* nie używane (kiedyś będzie) */
 #cover{
@@ -281,4 +295,12 @@ user-drag: none;
 			position: fixed;
 			padding-left: 5px;
 			font-size: 25px;
+}
+@media only screen and (max-width: 500px) {
+  .tytul {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 16px;
+  }
 }

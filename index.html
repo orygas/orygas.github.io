@@ -7,11 +7,12 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <!-- tytuł -->
   <title>¯\_(ツ)_/¯</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
 </head>
 <body id="fade-in" class="wybor">
   <center>
-    <div class="tytul" id="tytul">⚠️</div>
+    <div class="tytul" id="tytul"><img src="img/warning.png"></div>
     <div class="tytul">trochę tu pusto</div>
     <h2>coś tu kiedyś będzie</h2>
     <h2>¯\_(ツ)_/¯</h2>
@@ -31,8 +32,8 @@
     </div>
     <ul class ="motyw">
       <li class="motyw">
-        <span class="motyw">🌙</span>
-        <span class="motyw">☀️</span>
+        <span class="motyw"><img src="img/moon.png" class="motyw-img" alt="Ciemny motyw"></span>
+        <span class="motyw"><img src="img/sun.png" class="motyw-img" alt="Jasny motyw"></span>
       </li>
     </ul>
   </nav>
@@ -57,6 +58,9 @@
       $('ul.motyw').click(function(){
         $('ul.motyw').toggleClass('active')
         $('body').toggleClass('motyw')
+        $('nav').toggleClass('motyw')
+        $('div.tytul').toggleClass('motyw')
+        $('h2').toggleClass('motyw')
       })
     })
   </script>
