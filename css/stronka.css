@@ -499,7 +499,7 @@ table {
   background: rgba(0, 0, 0, 0.03);
   text-align: center;
 }
-@media only screen and (max-width: 920px) {
+@media only screen and (min-width: 920px) {
   .infoprodukt {
     bottom: 0px;
     right: auto;
@@ -513,24 +513,6 @@ table {
   }
   .zdjecieshop img {
     width: 80vh;
-    margin-right: 0px;
-  }
-}
-@media only screen and (max-width: 1240px) {
-  .zdjecieshop img {
-    width: 70vh;
-    margin-right: 0px;
-  }
-}
-@media only screen and (max-width: 1110px) {
-  .zdjecieshop img {
-    width: 60vh;
-    margin-right: 0px;
-  }
-}
-@media only screen and (max-width: 1010px) {
-  .zdjecieshop img {
-    width: 50vh;
     margin-right: 0px;
   }
 }
