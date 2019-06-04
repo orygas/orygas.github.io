@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- css -->
+  <link rel="stylesheet" type="text/css" href="css/stronka.css">
+  <!-- js -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- tytuł -->
+  <title>¯\_(ツ)_/¯</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+</head>
+<body id="fade-in" class="wybor">
+  <center>
+    <div id="cover" class="cover">
+      <div class="tytul" id="tytul"><img src="img/warning.png"></div>
+      <div class="tytul">trochę tu pusto</div>
+      <h2>coś tu kiedyś będzie</h2>
+      <h2>¯\_(ツ)_/¯</h2>
+    </div>
+      <a href="#next"><div id="strzalka"></div></a>
+    <div id="next">
+      <div class="tytul" id="tytul" style="padding-bottom: 50px;">
+        Nadal tu jesteś?
+      </div>
+    </div>
+  </center>
+  <nav class="fixed-nav-bar">
+    <div id="menu" class="menu">
+      <!-- Rzeczy na pasku nawigacji -->
+      <ul class="menu-items">
+        <li><a href="">HOME</a></li>
+        <li><a href="">SKLEP</a></li>
+        <li><a href="">O NAS</a></li>
+        <li><a href="">SPRZEDAJ SWOJE RZECZY</a></li>
+        <li><a href="">KONTAKT</a></li>
+      </ul>
+    </div>
+    <div class="zdjecie0">
+      <a href="https://orygas.github.io/"><img src ="img/kappa.png"/></a>
+    </div>
+    <ul class ="motyw">
+      <li class="motyw">
+        <span class="motyw"><img src="img/moon.png" class="motyw-img" alt="Ciemny motyw"></span>
+        <span class="motyw"><img src="img/sun.png" class="motyw-img" alt="Jasny motyw"></span>
+      </li>
+    </ul>
+  </nav>
+  <!-- scrolowanie do diva z '#' -->
+  <script>
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 800);
+        return false;
+      }
+    }
+  });
+  </script>
+  <!-- motyw -->
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('ul.motyw').click(function(){
+        $('ul.motyw').toggleClass('active')
+        $('body').toggleClass('motyw')
+        $('nav').toggleClass('motyw')
+        $('div.tytul').toggleClass('motyw')
+        $('h2').toggleClass('motyw')
+        $('#cover').toggleClass('motyw')
+        $('#strzalka').toggleClass('motyw')
+      })
+    })
+  </script>
+</body>
+</html>
