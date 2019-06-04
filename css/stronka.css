@@ -516,3 +516,21 @@ table {
     margin-right: 0px;
   }
 }
+@media only screen and (max-width: 1240px) {
+  .zdjecieshop img {
+    width: 70vh;
+    margin-right: 0px;
+  }
+}
+@media only screen and (max-width: 1110px) {
+  .zdjecieshop img {
+    width: 60vh;
+    margin-right: 0px;
+  }
+}
+@media only screen and (max-width: 1010px) {
+  .zdjecieshop img {
+    width: 50vh;
+    margin-right: 0px;
+  }
+}
