@@ -219,8 +219,9 @@ a:-webkit-any-link {
   margin-top: 10vh;
 }
 .zdjecieshop img {
-  width: 50vh;
+  width: 90vh;
   display: list-item;
+  padding-right: 30vh;
 }
 .infoprodukt {
   position: fixed;
@@ -514,5 +515,6 @@ table {
   .zdjecieshop img {
     width: 80vh;
     margin-right: 0px;
+    padding-right: 0px;
   }
 }
