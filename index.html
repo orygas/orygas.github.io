@@ -3,6 +3,7 @@
 <head>
   <!-- css -->
   <link rel="stylesheet" type="text/css" href="css/stronka.css">
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
   <!-- js -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <!-- tytuł -->
@@ -13,10 +14,10 @@
 <body id="fade-in" class="wybor">
   <center>
     <div id="cover" class="cover">
-      <img src="img/kappa.png" style="margin-top: 30vh; height: 20vh;">
-      <div class="tytul">SHOEBOX</div>
-      <h2>najlepszy internetowy & stacjonarny sklep</h2>
-      <h2>ze streetwearem w Polsce</h2>
+      <img src="img/SHOEBOX-logo-white1.png" style="margin-top: 30vh; height: 20vh;">
+      <!-- <div class="tytul" style="font-family: 'Pacifico'; background: linear-gradient(to right, #30CFD0 0%, #330867 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-transform: uppercase;">SHOEBOX</div> -->
+      <h2 style="color: #fff; -webkit-text-fill-color: currentColor;">najlepszy internetowy & stacjonarny sklep</h2>
+      <h2 style="color: #fff; -webkit-text-fill-color: currentColor;">ze streetwearem w Polsce</h2>
       <a href="#next"><div id="strzalka"></div></a>
     </div>
     <div id="next">
@@ -25,26 +26,34 @@
       </div>
       <ul class="menu-items" style="margin-bottom: 150px;">
         <li>
-          <a href="shop/350v2.html"><img src="img/350v2.png"></a>
+          <a href="shop/350v2.html">
+          <img src="img/350v2.png">
           <h3>yeezy boost 350 v2</h3>
           <h4>2495,16 PLN</h4>
+          </a>
         </li>
         <li>
-          <a href="shop/700v2.html"><img src="img/700v2.png"></a>
+          <a href="shop/700v2.html">
+          <img src="img/700v2.png"></a>
           <h3>yeezy boost 700 v2</h3>
           <h4>1552,94 PLN</h4>
+          </a>
         </li>
         <li>
-          <a href="shop/jordan1travis.html"><img src="img/travis.png"></a>
+          <a href="shop/jordan1travis.html">
+          <img src="img/travis.png">
           <h3>air jordan 1 hi og ts sp</h3>
           <h4>4349,47 PLN</h4>
+          </a>
         </li>
       </ul>
       <ul class="menu-items" style="margin-bottom: 150px;">
         <li>
+          <a href="shop/jordan1nyctoparis.html">
           <img src="img/nyctoparis.png">
           <h3>air jordan 1 sb retro high og</h3>
           <h4>800,02 PLN</h4>
+          </a>
         </li>
         <li>
           <img src="img/earthday.png" style="width: 600px;">
@@ -61,6 +70,10 @@
     <div class="container" style="display: -webkit-box;">
       <a class="btn btn-1" href="shop/shop.html">ZOBACZ WSZYSTKIE PRODUKTY</a>
     </div>
+    <div class="tytul" id="tytul" style="padding-bottom: 0px;margin-top: 10vh;">
+      nasza lokalizacja
+    </div>
+    <div id="map"></div>
     <h5 style="margin-bottom: 10px;">© 2019 SHOEBOX.COM</h5>
   </center>
   <nav class="fixed-nav-bar">
@@ -103,6 +116,38 @@
         $('#strzalka').toggleClass('motyw')
       })
     })
+  </script>
+  <script>
+
+    // This example displays a marker at the center of Australia.
+    // When the user clicks the marker, an info window opens.
+    // The maximum width of the info window is set to 200 pixels.
+
+    function initMap() {
+      var uluru = {lat: 54.366, lng: 18.633};
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 17,
+        center: uluru
+      });
+
+      var contentString = '<img src="img/SHOEBOX-logo.png" style="width: 200px; padding-left: 50px; padding-right: 50px;">'
+
+      var infowindow = new google.maps.InfoWindow({
+        content: contentString
+      });
+
+      var marker = new google.maps.Marker({
+        position: uluru,
+        map: map,
+        title: 'Uluru (Ayers Rock)'
+      });
+      marker.addListener('click', function() {
+        infowindow.open(map, marker);
+      });
+    }
+  </script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbvFW_--5qUXiltnkzpqzo5SSeVGiq54s&callback=initMap">
   </script>
 </body>
 </html>

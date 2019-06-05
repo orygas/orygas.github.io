@@ -215,11 +215,12 @@ a:-webkit-any-link {
   overflow: hidden;
 }
 .zdjecieshop {
-  margin-left: 10vh;
   margin-top: 10vh;
+  margin-right: 50vh;
+  margin-left: 10vh;
 }
 .zdjecieshop img {
-  width: 90vh;
+  width: 135vh;
   display: list-item;
   padding-right: 30vh;
 }
@@ -309,7 +310,7 @@ a:-webkit-any-link {
 }
 /* nie używane (kiedyś będzie) */
 #cover{
-  background: url('../img/wall.jpg') fixed center no-repeat;
+  background: url('../img/background.jpg') fixed center no-repeat;
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -511,6 +512,7 @@ table {
   }
   .zdjecieshop {
     margin-left: 0px;
+    margin-right: 0px;
   }
   .zdjecieshop img {
     width: 80vh;
@@ -518,3 +520,8 @@ table {
     padding-right: 0px;
   }
 }
+#map {
+        height: 40vh;  /* The height is 400 pixels */
+        width: 80vh;  /* The width is the width of the web page */
+        margin-bottom: 5vh;
+       }
