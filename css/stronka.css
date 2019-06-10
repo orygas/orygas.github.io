@@ -333,7 +333,7 @@ a:-webkit-any-link {
   height: 100vh;
   transition: ease-in-out .3s;
   padding-bottom: 0px;
-  background: url('../img/adidas-yeezy-jun-2019-desktop.png');
+  background: url('../img/adidas-yeezy-jun-2019-desktop.png') center no-repeat;
   background-repeat: no-repeat;
 }
 #next {
