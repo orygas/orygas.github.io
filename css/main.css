@@ -200,7 +200,8 @@ header {
 .footer-content {
   display: flex;
   flex-direction: column;
-  text-align: center
+  text-align: center;
+  margin-top: 5vh;
 }
 
 .footer-main {
