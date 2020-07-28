@@ -1,154 +1,103 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <!-- css -->
-  <link rel="stylesheet" type="text/css" href="css/stronka.css">
-  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
-  <!-- js -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <!-- tytuł -->
-  <title>SHOEBOX</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" href="css/icon-font.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;800&display=swap" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta charset="UTF-8">
+  <title>SHOEBOX</title>
 </head>
-<body id="fade-in" class="wybor">
-  <center>
-    <div id="cover" class="cover">
-      <img src="img/SHOEBOX-logo-white1.png" style="margin-top: 30vh; height: 20vh;">
-      <!-- <div class="tytul" style="font-family: 'Pacifico'; background: linear-gradient(to right, #30CFD0 0%, #330867 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; text-transform: uppercase;">SHOEBOX</div> -->
-      <h2 style="color: #fff; -webkit-text-fill-color: currentColor;">najlepszy internetowy & stacjonarny sklep</h2>
-      <h2 style="color: #fff; -webkit-text-fill-color: currentColor;">ze streetwearem w Polsce</h2>
-      <a href="#next"><div id="strzalka"></div></a>
-    </div>
-    <div id="next">
-      <div class="tytul" id="tytul" style="padding-bottom: 0px;margin-top: 5vh;">
-        nasz wybór
+
+<body>
+  <div class="main">
+    <div class="background"></div>
+
+    <header>
+      <div class="header-content">
+        <div class="header-text">
+          <img class="header-image" src="https://i.imgur.com/UlbAGAu.jpg">
+          <div class="header-text-primary">
+            <span>Oskar Rygasiewicz</span>
+          </div>
+          <div class="header-text-secondary">
+            <span>Student, website programmer and designer</span>
+          </div>
+        </div>
       </div>
-      <ul class="menu-items" style="margin-bottom: 130px;">
-        <li>
-          <a href="shop/350v2.html">
-          <img src="img/350v2.png">
-          <h3>yeezy boost 350 v2</h3>
-          <h4>2495,16 PLN</h4>
-          </a>
-        </li>
-        <li>
-          <a href="shop/700v2.html">
-          <img src="img/700v2.png"></a>
-          <h3>yeezy boost 700 v2</h3>
-          <h4>1552,94 PLN</h4>
-          </a>
-        </li>
-        <li>
-          <a href="shop/jordan1travis.html">
-          <img src="img/travis.png">
-          <h3>air jordan 1 hi og ts sp</h3>
-          <h4>4349,47 PLN</h4>
-          </a>
-        </li>
-        <li>
-          <a href="shop/jordan1nyctoparis.html">
-          <img src="img/nyctoparis.png">
-          <h3>air jordan 1 sb retro high og</h3>
-          <h4>800,02 PLN</h4>
-          </a>
-        </li>
-        <li>
-          <a href="shop/earthday.html">
-          <img src="img/earthday.png" style="width: 600px;">
-          <h3>Air Force 1 Flyleather QS</h3>
-          <h4>600,04 PLN</h4>
-          </a>
-        </li>
-        <li>
-          <a href="shop/jordan1chicago.html">
-          <img src="img/the10.png" style="width: 600px;">
-          <h3>The 10: Air Jordan 1</h3>
-          <h4>12941,47 PLN</h4>
-          </a>
-        </li>
+      <center>
+        <a href="#about" class="btn-floating pulse accent" style="margin-top: 4vh;"><i class="material-icons">arrow_downward</i></a>
+      </center>
+    </header>
+  </div>
+  <section id="about" style="height: 100vh;">
+    <div class="about-content">
+      <div class="section-break"></div>
+      <div class="section-text">
+        <span>Hi, nice to meet <span class="header-text-primary-bold">you</span></span>
+      </div>
+      <div class="section-subtext"> <span> Since beginning of my journey I've been always interested in creating
+          something on my own as well as helping others. I like to keep things simple and elegant yet functional.</span></div>
+
+      <div class="about-main">
+        <div class="about-main-card">
+          <div class="about-main-card-icon">
+            <i class="medium material-icons">brush</i>
+          </div>
+          <div class="about-main-card-text">
+            <div class="about-main-card-text-primary">
+              <span>
+                Design
+              </span>
+            </div>
+            <span class="about-main-card-text-secondary">
+              I value simple content structure, clean design patterns, and thoughtful interactions.
+            </span>
+          </div>
+        </div>
+        <div class="about-main-card">
+          <div class="about-main-card-icon">
+            <i class="medium material-icons">code</i>
+          </div>
+          <div class="about-main-card-text">
+            <div class="about-main-card-text-primary">
+              <span>
+                Code
+              </span>
+            </div>
+            <span class="about-main-card-text-secondary">
+              I like to code things from scratch, and enjoy bringing ideas to life in the browser.
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="section-subtext"> <span> Got any questions? </span> </div>
+      <a href="mailto:info@orygas02@gmail.com">
+        <div class="buttoncont" style="margin-top: 20px;"><span>Contact me</span></div>
+      </a>
+  </section>
+  <div class="footer-content">
+    <div class="footer-text">
+      <div class="footer-text-primary">
+        © 2020 Oskar Rygasiewicz
+      </div>
+      <br>
     </div>
-    <div class="container" style="display: -webkit-box;">
-      <a class="btn btn-1" href="shop/shop.html">ZOBACZ WSZYSTKIE PRODUKTY</a>
-    </div>
-    <div class="tytul" id="tytul" style="padding-bottom: 30px;margin-top: 10vh;">
-      nasza lokalizacja
-    </div>
-    <div id="map"></div>
-    <h5 style="margin-bottom: 10px;">© 2019 SHOEBOX.COM</h5>
-  </center>
-  <nav class="fixed-nav-bar" style="transition: none; animation: none; -webkit-animation: none;">
-    <div id="menu" class="menu">
-      <!-- Rzeczy na pasku nawigacji -->
-      <ul class="menu-items">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href="shop/shop.html">SKLEP</a></li>
-        <li><a href="about/about.html">O NAS</a></li>
-        <li><a href="sell-your-stuff/sell-your-stuff.html">SPRZEDAJ SWOJE RZECZY</a></li>
-        <li><a href="contact/contact.html">KONTAKT</a></li>
-      </ul>
-    </div>
-  </nav>
-  <!-- scrolowanie do diva z '#' -->
+  </div>
   <script>
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 800);
-        return false;
-      }
-    }
-  });
+    $(document).ready(function() {
+      $('.sidenav').sidenav();
+    });
   </script>
-  <!-- motyw -->
-  <script type="text/javascript">
-    $(document).ready(function(){
-      $('ul.motyw').click(function(){
-        $('ul.motyw').toggleClass('active')
-        $('body').toggleClass('motyw')
-        $('nav').toggleClass('motyw')
-        $('div.tytul').toggleClass('motyw')
-        $('h2').toggleClass('motyw')
-        $('#cover').toggleClass('motyw')
-        $('#strzalka').toggleClass('motyw')
-      })
-    })
-  </script>
-  <script>
 
-    // This example displays a marker at the center of Australia.
-    // When the user clicks the marker, an info window opens.
-    // The maximum width of the info window is set to 200 pixels.
+  <script type="text/javascript" src="js/materialize.min.js"></script>
 
-    function initMap() {
-      var uluru = {lat: 54.366, lng: 18.633};
-      var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 17,
-        center: uluru
-      });
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
-      var contentString = '<img src="img/SHOEBOX-logo.png" style="width: 200px; padding-left: 50px; padding-right: 50px;">'
-
-      var infowindow = new google.maps.InfoWindow({
-        content: contentString
-      });
-
-      var marker = new google.maps.Marker({
-        position: uluru,
-        map: map,
-        title: 'Uluru (Ayers Rock)'
-      });
-      marker.addListener('click', function() {
-        infowindow.open(map, marker);
-      });
-    }
-  </script>
-  <script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbvFW_--5qUXiltnkzpqzo5SSeVGiq54s&callback=initMap">
-  </script>
 </body>
+
 </html>
